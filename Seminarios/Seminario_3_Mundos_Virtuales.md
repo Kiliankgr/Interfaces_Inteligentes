@@ -1,8 +1,11 @@
 # Seminario 3 - Mundos virtuales. Introducción a la programación de gráficos 3D.
 
 ## Qué funciones se pueden usar en los scripts de Unity para llevar a cabo traslaciones, rotaciones y escalados.
+transform.Translate, transform.Rotate, transform.LocalScale.
 
 ## Como trasladarías la cámara 2 metros en cada uno de los ejes y luego la rotas 30º alrededor del eje Y?. Rota la cámara alrededor del eje Y 30ª y desplázala 2 metros en cada uno de los ejes. ¿Obtendrías el mismo resultado en ambos casos?. Justifica el resultado
+trasform.Translate(new Vector3(2,2,2)); transform.Rotate(0,30.0f,0);
+Depende de si los movimiento se producen respecto al objete (Cambiaria el resultado), ya que al rotar los ejes se modifican y al añadirle 2 metros a cada eje se desplazaria en funcion de la posicion de los ejes, por lo tanto si se rotan se moveria en otra direccion. Si es dependiendo del Space.world ( No debería cambiar el resultado). 
 
 ## Sitúa la esfera de radio 1 en el campo de visión de la cámara y configura un volumen de vista que la recorte parcialmente.
 
