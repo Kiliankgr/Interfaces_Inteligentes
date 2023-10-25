@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Prct3_Ej10_cubo : MonoBehaviour
 {
-    public float rotationspeed = 2;
+    public float rotationspeed = 1;
     float speed = 10.0f;
     // Start is called before the first frame update
     void Start()
@@ -23,8 +23,15 @@ public class Prct3_Ej10_cubo : MonoBehaviour
             this.transform.Translate(transform.forward * Time.deltaTime * Input.GetAxis("Vertical") * speed, Space.World);
         }
         if(Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.RightArrow)) {
-            // Si QUISIERAMOS que la rotacion fuese más suave, añadiriamos Slerp, o, Lerp
-            transform.Rotate(0,rotation,0);
+            
+            
+            Transform posArotar = this.transform;
+            posArotar.Rotate(0,rotation,0);
+            Quaternion rot = posArotar.rotation;
+            
+            transform.rotation = Quaternion.Slerp(this.transform.rotation, posArotar.rotation, 0.5f * Time.deltaTime);
         }
+
+        ;
     }
 }
