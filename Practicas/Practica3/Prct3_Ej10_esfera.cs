@@ -6,7 +6,7 @@ public class Prct3_Ej10_esfera : MonoBehaviour
 {
    
     Rigidbody m_Rigidbody;
-    float speed = 5.0f;
+    public float speed = 20.0f;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,14 +15,15 @@ public class Prct3_Ej10_esfera : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
 
-       // Todas las fisicas llevadas por objetos rigidbody, deberían de ser controladas en la funcion fixedUpdate, no en Update
         if (Input.GetKey(KeyCode.W))
         {
             //Move the Rigidbody forwards constantly at speed you define (the blue arrow axis in Scene view)
+            
             m_Rigidbody.AddForce(speed *Vector3.forward);
+            
         }
 
         if (Input.GetKey(KeyCode.S))
