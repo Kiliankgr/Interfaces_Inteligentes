@@ -1,3 +1,3 @@
 # **Funcionamiento**
 
-[](Capturas/ScriptsFuncionamiento.gif)
+![](./Capturas/ScriptsFuncionamiento.gif)
