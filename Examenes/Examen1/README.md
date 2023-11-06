@@ -1,0 +1,3 @@
+# **Funcionamiento**
+
+[](Capturas/ScriptsFuncionamiento.gif)
