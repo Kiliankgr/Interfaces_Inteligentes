@@ -61,8 +61,6 @@ public class ShowValues : MonoBehaviour
             
             if(latitudReferencia+rangoRadio >= Input.location.lastData.latitude && latitudReferencia-rangoRadio <= Input.location.lastData.latitude && longitudReferencia+rangoRadio >= Input.location.lastData.longitude && longitudReferencia-rangoRadio <= Input.location.lastData.longitude) {
                 samuraiObject.transform.Translate(Vector3.forward * (-Input.acceleration.z) * Time.deltaTime * velocidadAdelante ,Space.Self);
-            } else {
-                samuraiObject.transform.Translate(-Vector3.forward * (-Input.acceleration.z) * Time.deltaTime * velocidadAdelante ,Space.Self);
             }
 
             //Hacemos que siempre mire al norte
