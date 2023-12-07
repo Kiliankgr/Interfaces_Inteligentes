@@ -8,12 +8,12 @@ Debido a problemas para asistir el viernes debido al accidente que ocurrio en la
 **En mi casa**
 ![](./Capturas/captura1.png)  
 
-**Dentro del dentro de cálculo. Aun no**
+**Dentro del dentro de cálculo.**
+![](./Capturas/captura2.jpg)
 
 
-
-**En la puerta de la facultad. Aun no**
-
+**En la puerta de la facultad.**
+![](./Capturas/captura3.jpg)
 
 
 # Ejercicio 2:
